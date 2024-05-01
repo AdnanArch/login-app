@@ -1,16 +1,17 @@
 package com.adnanarch.loginapp;
 
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.util.Base64;
+
 /**
  * Author: Adnan Rafique
  * Date: 4/20/2024
  * Time: 11:51 PM
  * Version: 1.0
  */
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.util.Base64;
 
 public class SecureKeyGenerator {
     public static String generateSecureKey() {
