@@ -1,6 +1,6 @@
 package com.adnanarch.loginapp.security;
 
-import com.adnanarch.loginapp.user.UserRepository;
+import com.adnanarch.loginapp.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

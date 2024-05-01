@@ -1,10 +1,12 @@
 package com.adnanarch.loginapp.dto;
 
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Service;
 
 /**
  * Author: Adnan Rafique
@@ -16,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Getter
 @Setter
 @Builder
-public class RegistrationRequest {
+public class UserDto {
     @NotEmpty(message = "First name is required")
     @NotBlank(message = "First name is required")
     private String firstName;
@@ -33,7 +35,7 @@ public class RegistrationRequest {
     private String password;
     @NotEmpty(message = "CNIC is required")
     @NotBlank(message = "CNIC is required")
-    @Size(min = 13, max = 13, message = "CNIC must be 13 characters")
+    @Size(min = 15, max = 15, message = "CNIC must be 13 characters")
 //    @Pattern()
     private String cnic;
 }

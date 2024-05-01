@@ -1,6 +1,5 @@
-package com.adnanarch.loginapp.user;
+package com.adnanarch.loginapp.model;
 
-import com.adnanarch.loginapp.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -43,6 +42,7 @@ public class User implements UserDetails, Principal {
     @Column(unique = true)
     private String email;
     private String password;
+    private String cnicNo;
     private boolean accountLocked;
     private boolean enabled;
 

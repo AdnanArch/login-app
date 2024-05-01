@@ -1,4 +1,4 @@
-package com.adnanarch.loginapp.user;
+package com.adnanarch.loginapp.model;
 
 import jakarta.persistence.*;
 import lombok.*;

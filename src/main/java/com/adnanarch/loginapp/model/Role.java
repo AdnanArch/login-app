@@ -1,6 +1,5 @@
-package com.adnanarch.loginapp.role;
+package com.adnanarch.loginapp.model;
 
-import com.adnanarch.loginapp.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
