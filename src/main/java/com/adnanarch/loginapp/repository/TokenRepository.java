@@ -1,6 +1,6 @@
 package com.adnanarch.loginapp.repository;
 
-import com.adnanarch.loginapp.model.Token;
+import com.adnanarch.loginapp.entity.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

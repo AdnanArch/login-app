@@ -1,4 +1,4 @@
-package com.adnanarch.loginapp.model;
+package com.adnanarch.loginapp.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -35,10 +35,9 @@ import static jakarta.persistence.FetchType.EAGER;
 public class User implements UserDetails, Principal {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Integer  id;
     private String firstName;
     private String lastName;
-    private LocalDate dateOfBirth;
     @Column(unique = true)
     private String email;
     private String password;

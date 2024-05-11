@@ -1,6 +1,6 @@
 package com.adnanarch.loginapp;
 
-import com.adnanarch.loginapp.model.Role;
+import com.adnanarch.loginapp.entity.Role;
 import com.adnanarch.loginapp.repository.RoleRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
